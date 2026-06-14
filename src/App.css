@@ -122,3 +122,14 @@ p {
     width: 100%;
   }
 }
+
+/* Add this to your App.css */
+.sidebar a.active {
+  color: #c9d1d9;
+  font-weight: bold;
+}
+
+/* Optional: Make the "./" turn green when active */
+.sidebar a.active::before {
+  color: #7ee787; 
+}
