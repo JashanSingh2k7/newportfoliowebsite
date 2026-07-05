@@ -5,7 +5,6 @@ function App() {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    // 1. Set up the observer
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -15,23 +14,19 @@ function App() {
           }
         });
       },
-      // 3. rootMargin dictates where the "trigger line" is on the screen.
-      // This setting means it triggers when the section is near the top edge.
+
       { rootMargin: "-20% 0px -80% 0px" } 
     );
 
-    // 4. Tell the observer to watch all <section> tags
     const sections = document.querySelectorAll("section");
     sections.forEach((section) => observer.observe(section));
 
-    // Cleanup function
     return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
 
   return (
     <div className="layout">
       
-      {/* Sticky Navigation Sidebar */}
       <nav className="sidebar">
         <a 
           href="#about" 
@@ -62,10 +57,8 @@ function App() {
         </a>
       </nav>
 
-      {/* Main Scrolling Content */}
       <main className="content">
         
-        {/* About Section */}
         <section id="about">
           <h1>Jashan Singh </h1>
           <p className="comment">// BSE Software Engineering @ University of Waterloo (2025 - Present)</p>
@@ -81,7 +74,6 @@ function App() {
           </p>
         </section>
 
-        {/* Experience Section */}
         <section id="experience">
           <h2>experience()</h2>
           
@@ -113,7 +105,6 @@ function App() {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section id="projects">
           <h2>projects()</h2>
           
@@ -151,7 +142,6 @@ function App() {
           </div>
         </section>
 
-        {/* Skills Section */}
         <section id="skills">
           <h2>sys_info()</h2>
           <div className="project-block">
