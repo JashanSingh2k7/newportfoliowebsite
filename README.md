@@ -1,4 +1,4 @@
-# jashan-portfolio 👾
+# jashan-portfolio 
 
 > A high-density, terminal-inspired developer portfolio built for speed and engineered for backend, systems, and infrastructure engineering profiles.
 
