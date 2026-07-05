@@ -77,7 +77,7 @@ function App() {
           
           <div className="project-block">
             <p>
-              <span className="keyword">Software Engineer</span> @ <span className="entity">Lount</span> 
+              <span className="keyword">Software Engineer</span> @ <span className="entity">mylount.</span> 
               <br />
               (Architected dynamic billing logic using <span className="string">Stripe API</span> and <span className="string">Supabase PostgreSQL</span> triggers).
             </p>
