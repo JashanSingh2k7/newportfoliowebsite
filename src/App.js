@@ -8,13 +8,11 @@ function App() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // 2. If the section crosses into view, set it as active
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
           }
         });
       },
-
       { rootMargin: "-20% 0px -80% 0px" } 
     );
 
@@ -61,7 +59,7 @@ function App() {
         
         <section id="about">
           <h1>Jashan Singh </h1>
-          <p className="comment">// BSE Software Engineering @ University of Waterloo (2025 - Present)</p>
+          <p className="comment">{"// BSE Software Engineering @ University of Waterloo (2025 - Present)"}</p>
           <br/>
           <p>
             <span className="keyword">const</span> <span className="entity">focus</span> = <span className="string">"backend infrastructure, scalable ledgers, & C++ systems"</span>;
@@ -83,7 +81,7 @@ function App() {
               <br />
               (Architected dynamic billing logic using <span className="string">Stripe API</span> and <span className="string">Supabase PostgreSQL</span> triggers).
             </p>
-            <p className="comment">/* Developed a full-stack Next.js SaaS to automate rent collection. Engineered a server-side PDF generation pipeline for real-time maintenance logs and Bill 60-compliant LTB dispute ledgers. */</p>
+            <p className="comment">{"/* Developed a full-stack Next.js SaaS to automate rent collection. Engineered a server-side PDF generation pipeline for real-time maintenance logs and Bill 60-compliant LTB dispute ledgers. */"}</p>
           </div>
     
           <div className="project-block">
@@ -92,7 +90,7 @@ function App() {
               <br />
               (Managed CI/CD workflows using <span className="string">Jenkins</span>, ensuring 99% uptime for production-critical data ingestion).
             </p>
-            <p className="comment">/* Engineered scalable Python data pipelines and Selenium scrapers to autonomously extract JavaScript-rendered data, reducing manual processing time by 90%. */</p>
+            <p className="comment">{"/* Engineered scalable Python data pipelines and Selenium scrapers to autonomously extract JavaScript-rendered data, reducing manual processing time by 90%. */"}</p>
           </div>
 
           <div className="project-block">
@@ -101,7 +99,7 @@ function App() {
               <br />
               (Reduced frontend production time by 40% through scalable <span className="string">React/MUI</span> architecture).
             </p>
-            <p className="comment">/* Built interactive data dashboards to efficiently fetch, sort, and visualize large datasets in an Agile/Scrum environment. */</p>
+            <p className="comment">{"/* Built interactive data dashboards to efficiently fetch, sort, and visualize large datasets in an Agile/Scrum environment. */"}</p>
           </div>
         </section>
 
@@ -138,7 +136,7 @@ function App() {
               <br />
               (<span className="string">C++, Linux/Unix System Programming</span>).
             </p>
-            <p className="comment">/* Producing technical educational content breaking down low-level concepts including process control, memory management, and signal handlers. */</p>
+            <p className="comment">{"/* Producing technical educational content breaking down low-level concepts including process control, memory management, and signal handlers. */"}</p>
           </div>
         </section>
 
